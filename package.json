@@ -1,0 +1,33 @@
+{
+  "name": "ant-design-pro-utils",
+  "version": "0.1.0",
+  "description": "Utility functions for Ant-design-pro",
+  "main": "index.js",
+  "scripts": {
+    "commit": "npx git-cz",
+    "commit:retry": "npx git-cz --retry"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwzm/ant-design-pro-utils.git"
+  },
+  "keywords": [
+    "utils",
+    "ant-design-pro"
+  ],
+  "author": "kwzm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwzm/ant-design-pro-utils/issues"
+  },
+  "homepage": "https://github.com/kwzm/ant-design-pro-utils#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.0.2",
+    "typescript": "^3.7.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
