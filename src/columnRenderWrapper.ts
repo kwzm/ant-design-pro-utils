@@ -15,8 +15,9 @@ const defaultOptions = {
 }
 
 /**
- * 安全的 Table.column.render 包裹方法，使你不必在 render 里面写任何容错处理。
- * 如果 render 方法报错或返回为空值时（如 '',undefined,null,false）返回 defaultValue （默认为 -）
+ * 安全的 Table.column.render 包裹方法
+ * 
+ * 使你不必在 render 里面写任何容错处理，如果 render 方法报错或返回为空值时（如 '',undefined,null,false）返回 defaultValue （默认为 -）
  * 
  * @example
  * // 第一种用法：不接受任何参数，返回 dataIndex 对应的值，如果为空值则返回 defaultValue
@@ -40,11 +41,11 @@ const defaultOptions = {
  * }
  * // 以上三种用法都可以指定第二个参数 options，定义 defaultValue 或 errorCb
  * 
- * @param {function | string} cbOrPath - 渲染函数或路径
+ * @param {function | string} cbOrPath 渲染函数或路径
  * @param {{
  *   defaultValue: string,
  *   errorCb: function,
- * }} options - 配置项，可自定义 defaultValue 或 errorCb
+ * }} options 配置项，可自定义 defaultValue 或 errorCb
  */
 export default function columnRenderWrapper<T>(cbOrPath: CbOrPath<T>, options: Options<T> = defaultOptions) {
   return function (text: any, record: T, index: number) {

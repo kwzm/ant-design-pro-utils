@@ -11,8 +11,9 @@ const defaultOptions = {
 }
 
 /**
- * 安全的渲染包裹方法，如果你的渲染方法报错或返回值为空值，则返回 defaultValue
- * 通常用在 Antd Descriptions 组件中。
+ * 安全的渲染包裹方法
+ * 
+ * 如果你的渲染方法报错或返回值为空值则返回 defaultValue，通常用在 Antd Descriptions 组件中。
  * 
  * @example
  * // 第一种用法：直接传入要显示的变量
